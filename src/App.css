@@ -34,6 +34,7 @@
   border-radius: 50px;
   font-family: 'Space Grotesk', sans-serif;
   color: #FFFDCA;
+  box-shadow: 0px 1px 10px 0px #fff;
 }
 
 main{
@@ -42,20 +43,23 @@ main{
 
 h1 {
   /* font-size: 140px; */
-  font-size: 8vw;
+  font-size: 10.5vw;
   /* line-height: 140px; */
-  line-height: 20vh;
+  /* line-height: 21vh; */
+  line-height: 155px;
+  /* letter-spacing: -13px; */
+  letter-spacing: -0.8vw;
   font-weight: 900;
-  width: 80%;
-  margin: 60px auto 5vh;
+  width: 90%;
+  margin: 60px auto 3vh;
   color: white;
   font-family: 'DM Sans', sans-serif; 
 }
 
 p {
   /* font-size: 20px; */
-  font-size: 1.2vw;
-  width: 60%;  
+  font-size: 1.1vw;
+  width: 54%;  
   color: white;
   font-family: 'Space Grotesk', sans-serif;
   margin: 0 auto 40px;
@@ -66,7 +70,7 @@ p {
   align-items: center;
   justify-content: center;
   display: flex;
-  gap: 40px;
+  gap: 15px;
 }
 
 .b1, .b2{
@@ -90,6 +94,11 @@ p {
   border: 1px solid #FFFFFF;
   box-shadow: 0px 1px 10px 0px #21BDDF;
   color: white;
+}
+
+.b1:hover, .b2:hover, .connect-button:hover{
+  box-shadow: none;
+  transform: scale(1.03);
 }
 
 .below{
@@ -173,13 +182,30 @@ img{
   }
 }
 
+@media screen and (max-width:1400px) {
+  h1{
+    line-height: 140px;
+  }
+}
+
+@media screen and (max-width:1300px) {
+  h1{
+    line-height: 130px;
+  }
+}
+
+@media screen and (max-width:1300px) {
+  h1{
+    font-size: 11vw;
+    line-height: 130px;
+  }
+}
 
 @media screen and (max-width:1080px){
   h1 {
-    font-size: 8vw;
-    line-height: 100px;
+    font-size: 11vw;
+    line-height: 120px;
     font-weight: 900;
-    width: 80%;
   }
   
   p {
@@ -187,7 +213,7 @@ img{
   }
   
   .button-group {
-    gap: 30px;
+    gap: 12px;
   }
   
   .b1, .b2{
@@ -202,13 +228,38 @@ img{
   img{
     height: 40px;
   }
-
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1029px) {
+  h1 {
+    font-size: 10.5vw;
+    line-height: 110px;
+  }
+}
+
+@media screen and (max-width:994px) {
+  h1 {
+    font-size: 10.5vw;
+    line-height: 100px;
+  }
   .main{
     padding: 50px 100px;
   }
+}
+
+@media screen and (max-width:894px) {
+  h1 {
+    font-size: 10.5vw;
+    line-height:95px;
+    margin: 100px auto 5vh;
+  }
+}
+
+@media screen and (max-width:834px) {
+  h1 {
+    line-height:90px;
+  }
+
 }
 
 @media screen and (max-width:768px){
@@ -221,19 +272,18 @@ img{
   }
 
   h1 {
-    line-height: normal;
-    font-size: 10vw;
-    width: 90%;
-    margin: 100px auto 5vh;
+    font-size: 11.5vw;
+    line-height: 87px;
+    text-align: center;
   }
   
   p {
-    font-size: 2vw;
-    width: 80%;  
+    font-size: 1.3vw;
+    width: 58%;  
   }
   
   .button-group {
-    gap: 30px;
+    gap: 10px;
   }
   
   .b1, .b2{
@@ -244,16 +294,16 @@ img{
   }
   
   .below{
-    bottom: -65%;
+    bottom: -95%;
   }
   
   img{
-    height: 35px;
+    height: 33px;
   }
   
   .bubbleL1{
     left: 9%;
-    top: 20%;
+    top: 23%;
   }
   
   .bubbleL2{
@@ -262,12 +312,12 @@ img{
   }
   
   .bubbleL3{
-    left: 8%;
-    top: 35%;
+    left: 11%;
+    top: 38%;
   }
   
   .bubbleL4{
-    left: 10%;
+    left: 12%;
     top: 60%;
   }
   
@@ -277,25 +327,50 @@ img{
   }
   
   .bubbleR6{
-    right: 14%;
-    top: 65%;
+    right: 10%;
+    top: 58%;
   }
 }
 
-@media screen and (max-width:570px){
+@media screen and (max-width:700px) {
   h1 {
-    margin: 140px auto 5vh;
+    font-size: 10.5vw;
+    line-height: 75px;
+  }
+  p {
+      font-size: 1.6vw;
+      width: 58%;  
+  }
+  .b1, .b2{
+    padding: 6px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:600px){
+  h1 {
+    font-size: 10.5vw;
+    line-height: 60px;
+    margin: 160px auto 5vh;
+
+  }
+  p {
+    font-size: 1.9vw;
+    width: 58%;  
   }
 }
 
 @media screen and (max-width:500px){
   h1 {
-    font-size: 8vw;
+    font-size: 10vw;
+    line-height: 45px;
     margin: 140px auto 5vh;
   }
 
   p{
-    font-size: 2.5vw;
+    font-size: 2.3vw;
+    width: 70%;
   }
 
   .button-group {
@@ -343,7 +418,6 @@ img{
 }
 
 @media screen and (max-width:426px) {
-
   .header{
     width: 110%;
     margin: 0 auto;
@@ -354,18 +428,17 @@ img{
   }
   
   .connect-button {
-    
     padding: 6px 25px;
     border-radius: 30px;
   }
   
   h1 {
-    font-size: 35px;
+    font-size: 42px;
     margin: 140px auto 5vh;
   }
 
   p{
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .button-group {
@@ -378,3 +451,27 @@ img{
     font-size: 14px;
   }
 }
+
+@media screen and (max-width:380px) {
+  h1 {
+    font-size: 38px;
+    margin: 150px auto 5vh;
+  }
+
+  p{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:350px) {
+  h1 {
+    font-size: 35px;
+    margin: 150px auto 5vh;
+  }
+
+  p{
+    font-size: 10px;
+    width: 80%;
+  }
+}
+
+
